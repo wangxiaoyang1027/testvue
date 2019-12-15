@@ -3,18 +3,18 @@ import VueRouter from 'vue-router'
 import Vue from 'vue'
 
 import Home from '../components/home'
-import About from '../component/about'
+import About from '../components/about'
 
 // 1. 通过Vue.use(插件) ， 来安装插件
 Vue.use(VueRouter)
 
 // 2. 创建路由对象
 const routes =[{
-    path:'./home',
+    path:'/home',
     component:Home
 },
 {
-    path:'./about',
+    path:'/about',
     component:About
 }]
 const router = new VueRouter({
